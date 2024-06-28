@@ -148,7 +148,7 @@ export const Form = () => {
                transition-colors duration-400 ease-in-out ${
                  !isFormValid
                    ? "bg-gray-300 text-gray-600 "
-                   : "bg-customOrange hover:bg-customHoverOrange"
+                   : "bg-customOrange lg:hover:bg-customHoverOrange active:bg-customHoverOrange lg:active:outline-none"
                }`}
         >
           Отправить

@@ -52,7 +52,7 @@ export const Header = () => {
               </Link>
             </div>
             <Link to="#form">
-              <button className="bg-customOrange ml-2 px-2 lg:px-6 py-4 font-medium md:text-xl rounded-md shadow-lg hover:bg-customHoverOrange transition-colors duration-400 ease-in-out">
+              <button className="bg-customOrange ml-2 px-2 lg:px-6 py-4 font-medium md:text-xl rounded-md shadow-lg lg:hover:bg-customHoverOrange active:bg-customHoverOrange active:text-customHoverOrange transition-colors duration-400 ease-in-out">
                 ОТПРАВИТЬ ЗАЯВКУ
               </button>
             </Link>
@@ -65,7 +65,7 @@ export const Header = () => {
           <div className="flex items-center justify-between md:hidden">
             <button
               onClick={() => setIsOpenMenu(!isOpenMenu)}
-              className="p-2 my-2 ml-4 border-2 rounded-md"
+              className="p-2 my-2 ml-4 border-2 rounded-md active:bg-gray-400"
             >
               <img src={menuForPhone} alt="menu for phone" className="w-8" />
             </button>
