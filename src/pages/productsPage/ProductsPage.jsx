@@ -18,9 +18,14 @@ export const ProductsPage = () => {
 
   useEffect(() => {
     if (location.hash) {
+      const headerHeight = 100; // Высота шапки
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const offset = element.offsetTop - headerHeight; // Учесть высоту шапки при прокрутке
+        window.scrollTo({
+          top: offset,
+          behavior: "smooth",
+        });
       }
     } else {
       window.scrollTo(0, 0);

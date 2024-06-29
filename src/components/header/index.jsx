@@ -36,8 +36,8 @@ export const Header = () => {
       <nav className="h-[94px] border-b-2 border-gray-300 flex flex-col items-center">
         <div className="p-4 w-full xl:w-4/5 max-w-screen-custom2xl flex items-center justify-between">
           <img src={logo} alt="logo MPS" className="w-32 md:w-40" />
-          <ul className="flex items-center gap-4">
-            <div className="hidden md:flex justify-center gap-2 text-base">
+          <ul className="grid grid-flow-col items-center gap-4">
+            <div className="hidden md:grid grid-flow-col justify-center gap-2 text-base">
               <Link to="#contacts">
                 <CustomButton>
                   <img src={phone} alt="phone" className="w-6 m-0.5" />
@@ -69,7 +69,7 @@ export const Header = () => {
             >
               <img src={menuForPhone} alt="menu for phone" className="w-8" />
             </button>
-            <div className="flex justify-center gap-1 text-base">
+            <div className="grid grid-flow-col justify-center gap-1 text-base">
               <Link to="#contacts" className="py-2 my-2 mr-2 ">
                 <CustomButton>
                   <img src={phone} alt="phone" className="w-6 m-0.5" />
@@ -89,14 +89,14 @@ export const Header = () => {
 
           <div
             ref={menuRef}
-            className="p-4 hidden md:flex gap-10 justify-start items-center"
+            className="p-4 hidden md:grid grid-flow-col gap-10 justify-start items-center"
           >
             <div className="mr-6">
               <Link to="/#aboutCompany">
                 <CustomButton>О компании</CustomButton>
               </Link>
             </div>
-            <div className="flex flex-col items-center gap-4">
+            <div className="grid items-center gap-4">
               <CustomButton onClick={() => setIsOpenProducts(!isOpenProducts)}>
                 Продукция
                 <img

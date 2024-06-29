@@ -9,9 +9,14 @@ export const AboutCompanyPage = () => {
 
   useEffect(() => {
     if (location.hash) {
+      const headerHeight = 100; // Высота шапки
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const offset = element.offsetTop - headerHeight; // Учесть высоту шапки при прокрутке
+        window.scrollTo({
+          top: offset,
+          behavior: "smooth",
+        });
       }
     } else {
       window.scrollTo(0, 0);
@@ -27,7 +32,7 @@ export const AboutCompanyPage = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
-            className="p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-6xl md:text-7xl"
+            className="p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[38px] sm:text-5xl md:text-6xl lg:text-7xl"
             style={{
               textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
             }}
@@ -36,12 +41,12 @@ export const AboutCompanyPage = () => {
           </h1>
         </section>
         <section className="flex flex-col items-center border-b border-gray-200 shadow-lg">
-          <div className="text-justify p-4 xl:w-4/5 max-w-screen-custom2xl flex flex-col gap-4">
-            <h2 className="py-2 font-semibold text-2xl md:text-3xl">
+          <div className="text-justify p-4 xl:w-4/5 max-w-screen-custom2xl grid gap-4">
+            <h2 className="py-2 font-semibold text-xl md:text-2xl">
               Предприятие ООО «МПС» — опытный участник рынка черного
               металлопроката.
             </h2>
-            <p className="text-xl md:text-2xl">
+            <p className="text-lg md:text-xl">
               Наш металлоцентр предлагает широкий ассортимент листового,
               сортового и трубного металлопроката различных толщин и марок
               стали. <br /> <br />В перечень сервисных услуг входят: порезка в
@@ -58,7 +63,7 @@ export const AboutCompanyPage = () => {
                   alt="forward"
                   className="w-[64px] h-[64px]"
                 />
-                <div className="flex flex-col justify-center gap-2">
+                <div className="grid justify-center gap-2">
                   <h2 className="pt-4 text-customOrange text-[48px]">10 лет</h2>
 
                   <p className="ml-1 text-gray-500 text-2xl font-normal ">
@@ -72,7 +77,7 @@ export const AboutCompanyPage = () => {
                   alt="forward"
                   className="w-[64px] h-[64px]"
                 />
-                <div className="flex flex-col justify-center gap-2">
+                <div className="grid justify-center gap-2">
                   <h2 className="pt-4 text-customOrange text-[48px]">
                     2000 м&sup2;
                   </h2>
@@ -88,7 +93,7 @@ export const AboutCompanyPage = () => {
                   alt="forward"
                   className="w-[64px] h-[64px]"
                 />
-                <div className="flex flex-col justify-center gap-2">
+                <div className="grid justify-center gap-2">
                   <h2 className="pt-4 text-customOrange text-[48px]">1000 т</h2>
 
                   <p className="ml-1 text-gray-500 text-2xl font-normal">
@@ -102,7 +107,7 @@ export const AboutCompanyPage = () => {
                   alt="forward"
                   className="w-[64px] h-[64px]"
                 />
-                <div className="flex flex-col justify-center gap-2">
+                <div className="grid justify-center gap-2">
                   <h2 className="pt-4 text-customOrange text-[48px]">25</h2>
 
                   <p className="text-gray-500 text-2xl font-normal ">

@@ -10,9 +10,14 @@ export const ProductionsPage = () => {
 
   useEffect(() => {
     if (location.hash) {
+      const headerHeight = 100; // Высота шапки
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const offset = element.offsetTop - headerHeight; // Учесть высоту шапки при прокрутке
+        window.scrollTo({
+          top: offset,
+          behavior: "smooth",
+        });
       }
     } else {
       window.scrollTo(0, 0);
@@ -28,7 +33,7 @@ export const ProductionsPage = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
-            className="p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[32px] sm:text-5xl md:text-6xl lg:text-7xl"
+            className="p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[38px] sm:text-5xl md:text-6xl lg:text-7xl"
             style={{
               textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
             }}
@@ -37,19 +42,19 @@ export const ProductionsPage = () => {
           </h1>
         </section>
         <section className="flex flex-col items-center border-b-4 border-gray-300">
-          <div className="text-justify p-4 xl:w-4/5 max-w-screen-custom2xl flex flex-col gap-4">
-            <p className="text-xl md:text-2xl">
+          <div className="text-justify p-4 xl:w-4/5 max-w-screen-custom2xl grid gap-4">
+            <p className="text-lg md:text-xl ">
               Одним из направлений деятельности нашей компании является заказное
               производство металлоконструкций различной сложности и назначения:
             </p>
-            <ul className="text-start text-xl md:text-2xl py-6 flex flex-col gap-2">
+            <ul className="text-lg text-start md:text-xl  py-6 grid gap-2">
               <li>- балки перекрытия и фермы;</li>
               <li>- колонны и опоры;</li>
               <li>- каркасы и стойки;</li>
               <li>- павильоны и навесы;</li>
               <li>- ограждающие и декоративные элементы.</li>
             </ul>
-            <p id="restoration" className="text-xl md:text-2xl">
+            <p className="text-lg md:text-xl ">
               Наш персонал регулярно повышает квалификацию и гарантирует
               надежность и качество на каждом этапе производства —{" "}
               <span className="text-customOrange font-semibold">
@@ -59,7 +64,10 @@ export const ProductionsPage = () => {
             </p>
           </div>
         </section>
-        <section className="flex flex-col items-center border-b border-gray-200 shadow-lg">
+        <section
+          id="restoration"
+          className="flex flex-col items-center border-b border-gray-200 shadow-lg"
+        >
           <div className="px-4 pb-[180px] w-full xl:w-4/5 max-w-screen-custom2xl flex flex-col items-start border-b">
             <h2 className="pt-[100px] font-bold text-2xl">
               МЕХАНИЧЕСКАЯ ОБРАБОТКА
