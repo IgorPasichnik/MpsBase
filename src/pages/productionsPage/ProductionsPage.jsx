@@ -42,7 +42,7 @@ export const ProductionsPage = () => {
               Одним из направлений деятельности нашей компании является заказное
               производство металлоконструкций различной сложности и назначения:
             </p>
-            <ul className="text-xl md:text-2xl py-6 flex flex-col gap-2">
+            <ul className="text-start text-xl md:text-2xl py-6 flex flex-col gap-2">
               <li>- балки перекрытия и фермы;</li>
               <li>- колонны и опоры;</li>
               <li>- каркасы и стойки;</li>

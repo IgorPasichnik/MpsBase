@@ -47,8 +47,7 @@ export const AboutCompanyPage = () => {
               стали. <br /> <br />В перечень сервисных услуг входят: порезка в
               размер, гибка, сверлильные, токарные, вальцовочные, фрезерные и
               др. работы. Помимо механической обработки, наша компания
-              занимается производством металлоконструкций под заказ (см.
-              лицензии).
+              занимается производством металлоконструкций под заказ.
             </p>
           </div>
           <figure className="py-16 px-4 md:px-16 xl:w-4/5 max-w-screen-custom2xl flex justify-center items-center">
@@ -92,7 +91,7 @@ export const AboutCompanyPage = () => {
                 <div className="flex flex-col justify-center gap-2">
                   <h2 className="pt-4 text-customOrange text-[48px]">1000 т</h2>
 
-                  <p className="text-gray-500 text-2xl font-normal ">
+                  <p className="ml-1 text-gray-500 text-2xl font-normal">
                     продукции на складе
                   </p>
                 </div>

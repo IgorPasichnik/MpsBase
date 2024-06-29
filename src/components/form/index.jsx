@@ -54,12 +54,12 @@ export const Form = () => {
   return (
     <form
       id="form"
-      className="py-[158px] flex flex-col items-center justify-center gap-8"
+      className="py-[158px] grid items-center justify-center gap-8"
     >
       <h1 className="w-[370px] sm:w-[500px] md:w-[700px] text-center font-semibold text-2xl sm:text-3xl">
         Оставьте свои контакты и наш менеджер свяжется с Вами
       </h1>
-      <div className="w-[370px] sm:w-[500px] md:w-[700px] flex flex-col justify-between gap-4">
+      <div className="w-[370px] sm:w-[500px] md:w-[700px] grid justify-between gap-4">
         <div className="flex items-center justify-between">
           <label className="mb-4">ФИО</label>
           <div>
@@ -120,7 +120,7 @@ export const Form = () => {
             }`}
           />
         </div>
-        <label className="my-4 text-xs flex items-center justify-start gap-2">
+        <label className="my-4 text-xs flex items-center justify-start">
           <input
             type="checkbox"
             value="checkbox"
@@ -133,7 +133,7 @@ export const Form = () => {
               inputsHighlighted ? "ring-red-500 ring-2" : ""
             }`}
           ></span>
-          <p>
+          <p className="pl-4 text-sm ">
             Подверждаю свое согласие на{" "}
             <Link to="/terms-of-use" className="underline">
               обработку персональных данных

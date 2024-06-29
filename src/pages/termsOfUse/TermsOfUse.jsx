@@ -1,7 +1,7 @@
 export const TermsOfUse = () => {
   return (
-    <div className="py-10 px-20">
-      <h1 className="text-xl font-bold">
+    <div className="py-10 px-4 lg:px-20 text-sm lg:text-base text-justify">
+      <h1 className="text-base lg:text-xl font-bold">
         СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ КЛИЕНТОВ
       </h1>
       <p className="py-5">
