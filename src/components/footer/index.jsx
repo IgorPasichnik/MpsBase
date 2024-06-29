@@ -38,9 +38,9 @@ export const Footer = () => {
           </div>
           <a
             href="https://t.me/mpsmetalcenter"
-            className="mt-1 flex items-center gap-1"
+            className="mt-1 flex items-center"
           >
-            <img src={telegram} alt="tg" className="w-6 h-6" />
+            <img src={telegram} alt="tg" className="w-6 h-6 mr-2" />
             https://t.me/mpsmetalcenter
           </a>
         </div>

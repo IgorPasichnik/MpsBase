@@ -43,11 +43,11 @@ export const ProductionsPage = () => {
         </section>
         <section className="flex flex-col items-center border-b-4 border-gray-300">
           <div className="text-justify p-4 xl:w-4/5 max-w-screen-custom2xl grid gap-4">
-            <p className="text-lg md:text-xl ">
+            <p className="text-lg md:text-xl">
               Одним из направлений деятельности нашей компании является заказное
               производство металлоконструкций различной сложности и назначения:
             </p>
-            <ul className="text-lg text-start md:text-xl  py-6 grid gap-2">
+            <ul className="text-lg text-start md:text-xl py-6 grid gap-2">
               <li>- балки перекрытия и фермы;</li>
               <li>- колонны и опоры;</li>
               <li>- каркасы и стойки;</li>
