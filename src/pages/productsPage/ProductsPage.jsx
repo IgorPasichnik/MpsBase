@@ -36,7 +36,7 @@ export const ProductsPage = () => {
     <Layout>
       <main className="w-full border-gray-200 shadow-lg flex justify-center">
         <div className="px-4 pb-[180px] w-full xl:w-4/5 max-w-screen-custom2xl flex flex-col items-start border-b">
-          <h2 id="sheet" className="pt-[180px] font-bold text-2xl">
+          <h2 id="sheet" className="pt-[220px] font-bold text-2xl">
             ЛИСТОВОЙ ПРОКАТ
           </h2>
           <table className="text-lg w-full max-w-screen-custom2xl">
