@@ -1,4 +1,25 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export const TermsOfUse = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const headerHeight = 100;
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        const offset = element.offsetTop - headerHeight;
+        window.scrollTo({
+          top: offset,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <div className="py-10 px-4 lg:px-20 text-sm lg:text-base text-justify">
       <h1 className="text-base lg:text-xl font-bold">
@@ -88,7 +109,11 @@ export const TermsOfUse = () => {
           обязанности Сторон, а также перечень мер, применяемых Исполнителем в
           целях обеспечения безопасности персональных данных при их обработке
           указаны в Политике в отношении обработки персональных данных компании
-          (см. ниже)
+          (
+          <a href="#personal-data" className="text-blue-500 underline">
+            см. ниже
+          </a>
+          )
         </li>
         <li>
           9. Персональные данные обрабатываются до отписки физического лица от
@@ -113,7 +138,7 @@ export const TermsOfUse = () => {
           части 1 статьи 6, части 2 статьи 10 и части 2 статьи 11 Федерального
           закона №152-ФЗ «О персональных данных» от 27.07.2006 г.
         </li>
-        <li>
+        <li id="personal-data">
           12. Настоящее согласие действует в течение 5 лет с момента получения
           указанного согласия, либо до момента прекращения обработки
           персональных данных, указанных в п.9 и п.10 данного Согласия.

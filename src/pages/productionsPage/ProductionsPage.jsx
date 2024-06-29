@@ -10,10 +10,10 @@ export const ProductionsPage = () => {
 
   useEffect(() => {
     if (location.hash) {
-      const headerHeight = 100; // Высота шапки
+      const headerHeight = 100;
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
-        const offset = element.offsetTop - headerHeight; // Учесть высоту шапки при прокрутке
+        const offset = element.offsetTop - headerHeight;
         window.scrollTo({
           top: offset,
           behavior: "smooth",
