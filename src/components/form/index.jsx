@@ -52,14 +52,14 @@ export const Form = () => {
   };
 
   return (
-    <form
+    <section
       id="form"
       className="py-[158px] grid items-center justify-center gap-8"
     >
       <h1 className="w-[370px] sm:w-[500px] md:w-[700px] text-center font-semibold text-2xl sm:text-3xl">
         Оставьте свои контакты и наш менеджер свяжется с Вами
       </h1>
-      <div className="w-[370px] sm:w-[500px] md:w-[700px] grid justify-between gap-4">
+      <form className="w-[370px] sm:w-[500px] md:w-[700px] grid justify-between gap-4">
         <div className="flex items-center justify-between">
           <label className="mb-4">ФИО</label>
           <div>
@@ -170,7 +170,7 @@ export const Form = () => {
         ) : (
           <div className="h-[28px]"></div>
         )}
-      </div>
-    </form>
+      </form>
+    </section>
   );
 };

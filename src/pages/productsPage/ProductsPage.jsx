@@ -93,7 +93,6 @@ export const ProductsPage = () => {
           <h2 id="pipe" className="pt-[180px] font-bold text-2xl">
             ТРУБНАЯ ПРОДУКЦИЯ
           </h2>
-
           <table className="text-lg w-full max-w-screen-custom2xl">
             <thead>
               <tr className="h-[100px] border-b-[1px] border-solid border-gray-300 py-2 text-left">

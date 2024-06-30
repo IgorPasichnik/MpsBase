@@ -4,13 +4,13 @@ import { Map } from "./map/index";
 
 export const Footer = () => {
   return (
-    <footer className="w-full h-full bg-customGray4 flex items-start justify-center text-white shadow-customUpShodow">
-      <div className="w-full xl:w-4/5 max-w-screen-custom2xl flex items-center">
+    <footer className="w-full h-full bg-customGray4 flex items-start justify-center shadow-customUpShodow">
+      <address className="w-full xl:w-4/5 max-w-screen-custom2xl flex not-italic items-center">
         <div
           id="contacts"
           className="md:w-1/2 p-4 text-gray-400 text-lg md:text-xl grid gap-6"
         >
-          <h1 className="font-bold text-white text-[32px]">Контакты</h1>
+          <h3 className="font-bold text-white text-[32px]">Контакты</h3>
           <div className="flex flex-col justify-center gap-1">
             <p className="font-bold text-white">Отдел продаж металлопроката</p>
             <p>+7 949 605-26-47</p>
@@ -40,14 +40,14 @@ export const Footer = () => {
             href="https://t.me/mpsmetalcenter"
             className="mt-1 flex items-center"
           >
-            <img src={telegram} alt="tg" className="w-6 h-6 mr-2" />
+            <img src={telegram} alt="Telegram" className="w-6 h-6 mr-2" />
             https://t.me/mpsmetalcenter
           </a>
         </div>
         <div id="map" className="hidden md:block w-1/2 h-[700px]">
           <Map />
         </div>
-      </div>
+      </address>
     </footer>
   );
 };

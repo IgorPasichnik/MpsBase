@@ -36,18 +36,18 @@ export const Header = () => {
       <nav className="h-[94px] border-b-2 border-gray-300 flex flex-col items-center">
         <div className="p-4 w-full xl:w-4/5 max-w-screen-custom2xl flex items-center justify-between">
           <img src={logo} alt="logo MPS" className="w-32 md:w-40" />
-          <ul className="grid grid-flow-col items-center gap-4">
+          <div className="grid grid-flow-col items-center gap-4">
             <div className="hidden md:grid grid-flow-col justify-center gap-2 text-base">
               <Link to="#contacts">
                 <CustomButton>
-                  <img src={phone} alt="phone" className="w-6 m-0.5" />
-                  <p>+7 (949) 605-26-47</p>
+                  <img src={phone} alt="phone-icon" className="w-6 m-0.5" />
+                  <span>+7 (949) 605-26-47</span>
                 </CustomButton>
               </Link>
               <Link to="#contacts">
                 <CustomButton>
-                  <img src={marker} alt="marker" className="w-6 m-0.5" />
-                  <p>Мариуполь</p>
+                  <img src={marker} alt="marker-icon" className="w-6 m-0.5" />
+                  <span>Мариуполь</span>
                 </CustomButton>
               </Link>
             </div>
@@ -56,12 +56,12 @@ export const Header = () => {
                 ОТПРАВИТЬ ЗАЯВКУ
               </button>
             </Link>
-          </ul>
+          </div>
         </div>
       </nav>
 
-      <nav className="h-[68px] flex flex-col items-center">
-        <ul className="w-full xl:w-4/5 max-w-screen-custom2xl">
+      <section className="h-[68px] flex flex-col items-center">
+        <div className="w-full xl:w-4/5 max-w-screen-custom2xl">
           <div className="flex items-center justify-between md:hidden">
             <button
               onClick={() => setIsOpenMenu(!isOpenMenu)}
@@ -73,13 +73,13 @@ export const Header = () => {
               <Link to="#contacts" className="py-2 my-2 mr-2 ">
                 <CustomButton>
                   <img src={phone} alt="phone" className="w-6 m-0.5" />
-                  <p>+7 (949) 605-26-47</p>
+                  <span>+7 (949) 605-26-47</span>
                 </CustomButton>
               </Link>
               <Link to="#contacts" className="py-2 my-2 mr-4 ">
                 <CustomButton>
                   <img src={marker} alt="marker" className="w-6 m-0.5" />
-                  <p>Мариуполь</p>
+                  <span>Мариуполь</span>
                 </CustomButton>
               </Link>
             </div>
@@ -126,7 +126,7 @@ export const Header = () => {
               <CustomButton>Контакты</CustomButton>
             </Link>
           </div>
-        </ul>
+        </div>
 
         {isOpenProducts && (
           <div
@@ -145,7 +145,7 @@ export const Header = () => {
             {<MenuProductions />}
           </div>
         )}
-      </nav>
+      </section>
     </header>
   );
 };

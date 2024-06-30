@@ -67,7 +67,9 @@ export const AboutCompanyPage = () => {
                   className="w-[64px] h-[64px]"
                 />
                 <div className="grid justify-center gap-2">
-                  <h2 className="pt-4 text-customOrange text-[48px]">10 лет</h2>
+                  <div className="pt-4 text-customOrange text-[48px]">
+                    10 лет
+                  </div>
 
                   <p className="ml-1 text-gray-500 text-2xl font-normal ">
                     на рынке
@@ -81,9 +83,9 @@ export const AboutCompanyPage = () => {
                   className="w-[64px] h-[64px]"
                 />
                 <div className="grid justify-center gap-2">
-                  <h2 className="pt-4 text-customOrange text-[48px]">
+                  <div className="pt-4 text-customOrange text-[48px]">
                     2000 м&sup2;
-                  </h2>
+                  </div>
 
                   <p className="text-gray-500 text-2xl font-normal ">
                     производственных площадей
@@ -97,7 +99,9 @@ export const AboutCompanyPage = () => {
                   className="w-[64px] h-[64px]"
                 />
                 <div className="grid justify-center gap-2">
-                  <h2 className="pt-4 text-customOrange text-[48px]">1000 т</h2>
+                  <div className="pt-4 text-customOrange text-[48px]">
+                    1000 т
+                  </div>
 
                   <p className="ml-1 text-gray-500 text-2xl font-normal">
                     продукции на складе
@@ -111,7 +115,7 @@ export const AboutCompanyPage = () => {
                   className="w-[64px] h-[64px]"
                 />
                 <div className="grid justify-center gap-2">
-                  <h2 className="pt-4 text-customOrange text-[48px]">25</h2>
+                  <div className="pt-4 text-customOrange text-[48px]">25</div>
 
                   <p className="text-gray-500 text-2xl font-normal ">
                     сотрудников в штате
