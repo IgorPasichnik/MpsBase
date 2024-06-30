@@ -92,7 +92,7 @@ export const Header = () => {
             className="p-4 hidden md:grid grid-flow-col gap-10 justify-start items-center"
           >
             <div className="mr-6">
-              <Link to="/#aboutCompany">
+              <Link to="/#about-сompany">
                 <CustomButton>О компании</CustomButton>
               </Link>
             </div>

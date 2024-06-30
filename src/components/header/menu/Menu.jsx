@@ -5,7 +5,7 @@ export const Menu = () => {
   return (
     <ul className="ml-4 w-[368px] border-2 border-gray-200 rounded-sm flex flex-col absolute bg-white drop-d ">
       <div className="p-4 border-b-2 border-gray-200 flex justify-start">
-        <Link to="/#aboutCompany">
+        <Link to="/#about-сompany">
           <CustomButton>О компании</CustomButton>
         </Link>
       </div>

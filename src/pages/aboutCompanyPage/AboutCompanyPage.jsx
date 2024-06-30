@@ -26,7 +26,7 @@ export const AboutCompanyPage = () => {
   return (
     <Layout>
       <main className="w-full max-w-full">
-        <div id="aboutCompany" className="h-[162px]"></div>
+        <div id="about-сompany" className="h-[162px]"></div>
         <section
           className="bg-cover bg-center h-60 flex jusify-start xl:justify-center"
           style={{ backgroundImage: `url(${image})` }}
