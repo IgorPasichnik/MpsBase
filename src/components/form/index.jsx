@@ -28,7 +28,7 @@ export const Form = () => {
     if (isFormValid && checkbox) {
       const feedbackData = { name, email, message, phoneNumber };
       try {
-        const response = await fetch("http://localhost:8000/api/send-email", {
+        const response = await fetch(process.env.REACT_APP_SENDEMAIL_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -148,7 +148,7 @@ export const Form = () => {
                transition-colors duration-400 ease-in-out ${
                  !isFormValid
                    ? "bg-gray-300 text-gray-600 "
-                   : "bg-customOrange lg:hover:bg-customHoverOrange active:bg-customHoverOrange lg:active:outline-none"
+                   : "bg-customOrange lg:hover:bg-customHoverOrange active:bg-customHoverOrange active:text-customHoverOrange lg:active:outline-none"
                }`}
         >
           Отправить

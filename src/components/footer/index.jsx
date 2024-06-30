@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="w-full xl:w-4/5 max-w-screen-custom2xl flex items-center">
         <div
           id="contacts"
-          className="md:w-1/2 p-4 text-gray-400 text-[20px] grid gap-6"
+          className="md:w-1/2 p-4 text-gray-400 text-lg md:text-xl grid gap-6"
         >
           <h1 className="font-bold text-white text-[32px]">Контакты</h1>
           <div className="flex flex-col justify-center gap-1">
