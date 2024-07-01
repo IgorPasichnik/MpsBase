@@ -19,7 +19,7 @@ export const ProductsPage = () => {
 
   useEffect(() => {
     if (location.hash) {
-      const headerHeight = 100;
+      const headerHeight = 88;
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
         const offset = element.offsetTop - headerHeight;
@@ -36,8 +36,17 @@ export const ProductsPage = () => {
   return (
     <Layout>
       <Helmet>
-        <meta property="og:url" content="mps.ru/products" />
-        <link rel="canonical" href="https://mps/products" />
+        <title>Металлопрокат в Мариуполе - Купить</title>
+        <meta
+          name="description"
+          content="Листовой прокат, сортовой прокат, трубная продукция"
+        />
+        <meta
+          property="og:url"
+          content="https://mps-base.vercel.app/products"
+        />
+        <link rel="canonical" href="https://mps-base.vercel.app/products" />
+        <meta name="robots" content="index" />
       </Helmet>
       <main className="w-full border-gray-200 shadow-lg flex justify-center">
         <div className="px-4 pb-[180px] w-full xl:w-4/5 max-w-screen-custom2xl flex flex-col items-start border-b">

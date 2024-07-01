@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
+import image1 from "../../images/background/3.jpg";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
 import { Helmet } from "react-helmet";
 
@@ -11,7 +12,7 @@ export const ProductionsPage = () => {
 
   useEffect(() => {
     if (location.hash) {
-      const headerHeight = 100;
+      const headerHeight = 88;
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
         const offset = element.offsetTop - headerHeight;
@@ -28,8 +29,19 @@ export const ProductionsPage = () => {
   return (
     <Layout>
       <Helmet>
-        <meta property="og:url" content="mps.ru/productions" />
-        <link rel="canonical" href="https://mps/productions" />
+        <title>
+          Металлоконструкции и механическая обработка в Мариуполе - Купить
+        </title>
+        <meta
+          name="description"
+          content="балки перекрытия и фермы, колонны и опоры, каркасы и стойки, павильоны и навесы, ограждающие и декоративные элементы."
+        />
+        <meta
+          property="og:url"
+          content="https://mps-base.vercel.app/productions"
+        />
+        <link rel="canonical" href="https://mps-base.vercel.app/productions" />
+        <meta name="robots" content="index" />
       </Helmet>
       <main className="w-full max-w-full">
         <div id="structures" className="h-[162px]"></div>
@@ -46,7 +58,7 @@ export const ProductionsPage = () => {
             Металлоконструкции
           </h1>
         </section>
-        <section className="flex flex-col items-center border-b-4 border-gray-300">
+        <section className="flex flex-col items-center border-b-2 border-gray-300">
           <div className="text-justify p-4 xl:w-4/5 max-w-screen-custom2xl grid gap-4">
             <p className="text-lg md:text-xl">
               Одним из направлений деятельности нашей компании является заказное
@@ -54,27 +66,27 @@ export const ProductionsPage = () => {
             </p>
             <ul className="text-lg text-start md:text-xl py-6 grid gap-2">
               <li>
-                <span className="text-customOrange font-bold">•</span> балки
+                <span className="text-customOrange font-bold pr-2">•</span>балки
                 перекрытия и фермы;
               </li>
               <li>
-                <span className="text-customOrange font-bold">•</span> колонны и
-                опоры;
+                <span className="text-customOrange font-bold pr-2">•</span>
+                колонны и опоры;
               </li>
               <li>
-                <span className="text-customOrange font-bold">•</span> каркасы и
-                стойки;
+                <span className="text-customOrange font-bold pr-2">•</span>
+                каркасы и стойки;
               </li>
               <li>
-                <span className="text-customOrange font-bold">•</span> павильоны
-                и навесы;
+                <span className="text-customOrange font-bold pr-2">•</span>
+                павильоны и навесы;
               </li>
               <li>
-                <span className="text-customOrange font-bold">•</span>{" "}
+                <span className="text-customOrange font-bold pr-2">•</span>
                 ограждающие и декоративные элементы.
               </li>
             </ul>
-            <p className="text-lg md:text-xl ">
+            <p id="restoration" className="text-lg md:text-xl ">
               Наш персонал регулярно повышает квалификацию и гарантирует
               надежность и качество на каждом этапе производства —{" "}
               <span className="text-customOrange font-semibold">
@@ -85,13 +97,23 @@ export const ProductionsPage = () => {
           </div>
         </section>
         <section
-          id="restoration"
-          className="flex flex-col items-center border-b border-gray-200 shadow-lg"
+          className="bg-cover bg-ещз h-25 flex jusify-start xl:justify-center"
+          style={{ backgroundImage: `url(${image1})` }}
         >
+          <h2
+            className="p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white font-bold text-2xl"
+            style={{
+              textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
+            }}
+          >
+            МЕХАНИЧЕСКАЯ ОБРАБОТКА
+          </h2>
+        </section>
+        <section className="flex flex-col items-center border-b border-gray-200 shadow-lg">
           <div className="px-4 pb-[180px] w-full xl:w-4/5 max-w-screen-custom2xl flex flex-col items-start border-b">
-            <h2 className="pt-[100px] font-bold text-2xl">
+            {/* <h2 className="pt-[100px] font-bold text-2xl">
               МЕХАНИЧЕСКАЯ ОБРАБОТКА
-            </h2>
+            </h2> */}
             <table className="text-lg w-full max-w-screen-custom2xl">
               <thead>
                 <tr className="h-[100px] border-b-[1px] border-solid border-gray-300 py-2 text-left">

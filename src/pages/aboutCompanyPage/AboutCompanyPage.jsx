@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Layout } from "../../components/layout";
 import forward from "../../images/forward-64.png";
-import image from "../../images/background/1.jpg";
+import image from "../../images/background/3.jpg";
 import { Helmet } from "react-helmet";
 
 export const AboutCompanyPage = () => {
@@ -10,7 +10,7 @@ export const AboutCompanyPage = () => {
 
   useEffect(() => {
     if (location.hash) {
-      const headerHeight = 100;
+      const headerHeight = 88;
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
         const offset = element.offsetTop - headerHeight;
@@ -27,13 +27,21 @@ export const AboutCompanyPage = () => {
   return (
     <Layout>
       <Helmet>
-        <meta property="og:url" content="mps.ru" />
-        <link rel="canonical" href="https://mps/" />
+        <title>
+          МПС - Металлопрокат и металлоконструкции в Мариуполе - Купить
+        </title>
+        <meta
+          name="description"
+          content="МПС - поставщик металлопроката и производитель промышленных и коммерческих металлоконструкций."
+        />
+        <meta property="og:url" content="https://mps-base.vercel.app/" />
+        <link rel="canonical" href="https://mps-base.vercel.app/" />
+        <meta name="robots" content="index" />
       </Helmet>
       <main className="w-full max-w-full">
-        <div id="about-сompany" className="h-[162px]"></div>
+        <div id="about-company" className="h-[162px]"></div>
         <section
-          className="bg-cover bg-center h-60 flex jusify-start xl:justify-center"
+          className="bg-cover bg-left h-60 flex jusify-start xl:justify-center"
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
@@ -47,7 +55,7 @@ export const AboutCompanyPage = () => {
         </section>
         <section className="flex flex-col items-center border-b border-gray-200 shadow-lg">
           <div className="text-justify p-4 xl:w-4/5 max-w-screen-custom2xl grid gap-4">
-            <h2 className="py-2 font-semibold text-xl md:text-2xl">
+            <h2 className="font-semibold text-xl md:text-2xl">
               Предприятие ООО «МПС» — опытный участник рынка черного
               металлопроката.
             </h2>
