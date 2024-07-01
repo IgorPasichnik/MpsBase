@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
+import { Helmet } from "react-helmet";
 
 export const ProductionsPage = () => {
   const { data, isLoading } = useGetRestorationProductionsQuery();
@@ -26,6 +27,10 @@ export const ProductionsPage = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <meta property="og:url" content="mps.ru/productions" />
+        <link rel="canonical" href="https://mps/productions" />
+      </Helmet>
       <main className="w-full max-w-full">
         <div id="structures" className="h-[162px]"></div>
         <section
@@ -48,11 +53,26 @@ export const ProductionsPage = () => {
               производство металлоконструкций различной сложности и назначения:
             </p>
             <ul className="text-lg text-start md:text-xl py-6 grid gap-2">
-              <li>- балки перекрытия и фермы;</li>
-              <li>- колонны и опоры;</li>
-              <li>- каркасы и стойки;</li>
-              <li>- павильоны и навесы;</li>
-              <li>- ограждающие и декоративные элементы.</li>
+              <li>
+                <span className="text-customOrange font-bold">•</span> балки
+                перекрытия и фермы;
+              </li>
+              <li>
+                <span className="text-customOrange font-bold">•</span> колонны и
+                опоры;
+              </li>
+              <li>
+                <span className="text-customOrange font-bold">•</span> каркасы и
+                стойки;
+              </li>
+              <li>
+                <span className="text-customOrange font-bold">•</span> павильоны
+                и навесы;
+              </li>
+              <li>
+                <span className="text-customOrange font-bold">•</span>{" "}
+                ограждающие и декоративные элементы.
+              </li>
             </ul>
             <p className="text-lg md:text-xl ">
               Наш персонал регулярно повышает квалификацию и гарантирует

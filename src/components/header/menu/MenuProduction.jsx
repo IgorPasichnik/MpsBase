@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const MenuProductions = () => {
   return (
-    <ul className="ml-[300px] mt-[4px] w-54 border-2 border-gray-200 rounded-sm flex flex-col  absolute bg-white drop-d ">
+    <ul className="ml-[300px] mt-[4px] w-54 border-2 border-gray-200 rounded-sm flex flex-col  absolute bg-white drop-d text-customBlack">
       <div className="p-4 border-b-2 border-gray-200 flex justify-start">
         <Link to="/productions#structures">
           <CustomButton>Металлоконструкции</CustomButton>

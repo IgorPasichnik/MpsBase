@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Layout } from "../../components/layout";
 import forward from "../../images/forward-64.png";
 import image from "../../images/background/1.jpg";
+import { Helmet } from "react-helmet";
 
 export const AboutCompanyPage = () => {
   const location = useLocation();
@@ -25,6 +26,10 @@ export const AboutCompanyPage = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <meta property="og:url" content="mps.ru" />
+        <link rel="canonical" href="https://mps/" />
+      </Helmet>
       <main className="w-full max-w-full">
         <div id="about-сompany" className="h-[162px]"></div>
         <section

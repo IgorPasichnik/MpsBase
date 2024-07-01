@@ -60,7 +60,7 @@ export const Header = () => {
         </div>
       </nav>
 
-      <section className="h-[68px] flex flex-col items-center">
+      <section className="h-[68px] flex flex-col items-center bg-customGray text-white">
         <div className="w-full xl:w-4/5 max-w-screen-custom2xl">
           <div className="flex items-center justify-between md:hidden">
             <button
@@ -89,7 +89,7 @@ export const Header = () => {
 
           <div
             ref={menuRef}
-            className="p-4 hidden md:grid grid-flow-col gap-10 justify-start items-center"
+            className="p-4 hidden md:grid grid-flow-col gap-10 justify-start items-center "
           >
             <div className="mr-6">
               <Link to="/#about-сompany">

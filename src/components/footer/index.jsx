@@ -4,7 +4,7 @@ import { Map } from "./map/index";
 
 export const Footer = () => {
   return (
-    <footer className="w-full h-full bg-customGray4 flex items-start justify-center shadow-customUpShodow">
+    <footer className="w-full h-full bg-customGray flex items-start justify-center shadow-customUpShodow">
       <address className="w-full xl:w-4/5 max-w-screen-custom2xl flex not-italic items-center">
         <div
           id="contacts"
