@@ -34,8 +34,8 @@ export const AboutCompanyPage = () => {
           name="description"
           content="МПС - поставщик металлопроката и производитель промышленных и коммерческих металлоконструкций."
         />
-        <meta property="og:url" content="https://mps-base.vercel.app/" />
-        <link rel="canonical" href="https://mps-base.vercel.app/" />
+        {/* <meta property="og:url" content="https://mps-base.vercel.app/" />
+        <link rel="canonical" href="https://mps-base.vercel.app/" /> */}
         <meta name="robots" content="index" />
       </Helmet>
       <main className="w-full max-w-full">

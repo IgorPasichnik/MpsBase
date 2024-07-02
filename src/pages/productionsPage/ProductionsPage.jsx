@@ -36,11 +36,11 @@ export const ProductionsPage = () => {
           name="description"
           content="балки перекрытия и фермы, колонны и опоры, каркасы и стойки, павильоны и навесы, ограждающие и декоративные элементы."
         />
-        <meta
+        {/* <meta
           property="og:url"
           content="https://mps-base.vercel.app/productions"
         />
-        <link rel="canonical" href="https://mps-base.vercel.app/productions" />
+        <link rel="canonical" href="https://mps-base.vercel.app/productions" /> */}
         <meta name="robots" content="index" />
       </Helmet>
       <main className="w-full max-w-full">

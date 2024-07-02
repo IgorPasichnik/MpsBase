@@ -41,11 +41,11 @@ export const ProductsPage = () => {
           name="description"
           content="Листовой прокат, сортовой прокат, трубная продукция"
         />
-        <meta
+        {/* <meta
           property="og:url"
           content="https://mps-base.vercel.app/products"
         />
-        <link rel="canonical" href="https://mps-base.vercel.app/products" />
+        <link rel="canonical" href="https://mps-base.vercel.app/products" /> */}
         <meta name="robots" content="index" />
       </Helmet>
       <main className="w-full border-gray-200 shadow-lg flex justify-center">
