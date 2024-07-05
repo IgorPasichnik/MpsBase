@@ -2,9 +2,9 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
-import image1 from "../../images/background/34.png";
+import image1 from "../../images/background/3.png";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 export const ProductionsPage = () => {
   const { data, isLoading } = useGetRestorationProductionsQuery();
@@ -28,7 +28,7 @@ export const ProductionsPage = () => {
 
   return (
     <Layout>
-      <Helmet>
+      {/* <Helmet>
         <title>
           Металлоконструкции и механическая обработка в Мариуполе - Купить
         </title>
@@ -36,13 +36,13 @@ export const ProductionsPage = () => {
           name="description"
           content="балки перекрытия и фермы, колонны и опоры, каркасы и стойки, павильоны и навесы, ограждающие и декоративные элементы."
         />
-        {/* <meta
+        <meta
           property="og:url"
           content="https://mps-base.vercel.app/productions"
         />
-        <link rel="canonical" href="https://mps-base.vercel.app/productions" /> */}
+        <link rel="canonical" href="https://mps-base.vercel.app/productions" />
         <meta name="robots" content="index" />
-      </Helmet>
+      </Helmet> */}
       <main className="w-full max-w-full">
         <div id="structures" className="h-[162px]"></div>
         <section
@@ -64,7 +64,7 @@ export const ProductionsPage = () => {
               Одним из направлений деятельности нашей компании является заказное
               производство металлоконструкций различной сложности и назначения:
             </p>
-            <ul className="text-lg text-start md:text-xl py-6 grid gap-2">
+            <ul className="text-lg text-start md:text-xl p-6 grid gap-2">
               <li>
                 <span className="text-customOrange font-black pr-3">•</span>
                 балки перекрытия и фермы;

@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Layout } from "../../components/layout";
 import forward from "../../images/forward-64.png";
-import image from "../../images/background/1.jpg";
-import { Helmet } from "react-helmet";
+import image from "../../images/background/4.jpg";
+// import { Helmet } from "react-helmet";
 
 export const AboutCompanyPage = () => {
   const location = useLocation();
@@ -26,7 +26,7 @@ export const AboutCompanyPage = () => {
 
   return (
     <Layout>
-      <Helmet>
+      {/* <Helmet>
         <title>
           МПС - Металлопрокат и металлоконструкции в Мариуполе - Купить
         </title>
@@ -34,18 +34,18 @@ export const AboutCompanyPage = () => {
           name="description"
           content="МПС - поставщик металлопроката и производитель промышленных и коммерческих металлоконструкций."
         />
-        {/* <meta property="og:url" content="https://mps-base.vercel.app/" />
-        <link rel="canonical" href="https://mps-base.vercel.app/" /> */}
+        <meta property="og:url" content="https://mps-base.vercel.app/" />
+        <link rel="canonical" href="https://mps-base.vercel.app/" />
         <meta name="robots" content="index" />
-      </Helmet>
+      </Helmet> */}
       <main className="w-full max-w-full">
         <div id="about-company" className="h-[162px]"></div>
         <section
-          className="bg-cover bg-left h-60 flex jusify-start xl:justify-center"
+          className="bg-cover bg-left-top h-60 flex jusify-start xl:justify-center"
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
-            className="tracking-tighter p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[38px] sm:text-5xl "
+            className="tracking-tighter p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[38px] sm:text-5xl"
             style={{
               textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
             }}
@@ -78,8 +78,8 @@ export const AboutCompanyPage = () => {
                 </p>
               </div>
             </div>
-            <div className="absolute mt-[13px] md:w-3/4 xl:w-2/3 max-w-7xl h-[520px] lg:h-[400px] bg-customGray opacity-80"></div>
-            <div className="md:h-[520px] lg:h-[400px] md:relative md:w-3/5 lg:w-4/7 mb-[12px] md:border-[13px] md:ml-auto border-customOrange border-opacity-65 rounded-sm bg-white z-10">
+            <div className="absolute mt-[13px] md:w-4/5 xl:w-7/10 max-w-7xl h-[520px] lg:h-[400px] bg-customGray opacity-80"></div>
+            <div className="md:h-[520px] lg:h-[400px] md:relative md:w-3/5 lg:w-4/7 mb-[12px] md:border-[13px] md:ml-auto border-customOrange border-opacity-80 rounded-sm bg-white z-10">
               <div className="md:pl-32 lg:pl-10 2xl:pl-24 pt-12 lg:pt-12 right-0 flex flex-wrap justify-center lg:grid grid-cols-2 justify-items-center gap-16 md:gap-0">
                 <div className="w-[350px] lg:w-[200px] 2xl:w-[300px] h-[80px] lg:h-[150px] flex items-start">
                   <img
