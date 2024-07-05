@@ -18,6 +18,9 @@ module.exports = {
         white: "#ffffff",
         black: "#000000",
       },
+      width: {
+        "4/7": "57.142857%",
+      },
     },
   },
   plugins: [],

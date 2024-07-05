@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
-import image1 from "../../images/background/3.jpg";
+import image1 from "../../images/background/3.png";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
 import { Helmet } from "react-helmet";
 
@@ -50,12 +50,12 @@ export const ProductionsPage = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
-            className="p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[38px] sm:text-5xl md:text-6xl lg:text-7xl"
+            className="tracking-tighter p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[32px] sm:text-5xl md:text-6xl lg:text-7xl whitespace-normal"
             style={{
               textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
             }}
           >
-            Металлоконструкции
+            МЕТАЛЛОКОНСТРУКЦИИ
           </h1>
         </section>
         <section className="flex flex-col items-center border-b-2 border-gray-300">
@@ -66,23 +66,23 @@ export const ProductionsPage = () => {
             </p>
             <ul className="text-lg text-start md:text-xl py-6 grid gap-2">
               <li>
-                <span className="text-customOrange font-bold pr-2">•</span>балки
-                перекрытия и фермы;
+                <span className="text-customOrange font-black pr-3">•</span>
+                балки перекрытия и фермы;
               </li>
               <li>
-                <span className="text-customOrange font-bold pr-2">•</span>
+                <span className="text-customOrange font-black pr-3">•</span>
                 колонны и опоры;
               </li>
               <li>
-                <span className="text-customOrange font-bold pr-2">•</span>
+                <span className="text-customOrange font-black pr-3">•</span>
                 каркасы и стойки;
               </li>
               <li>
-                <span className="text-customOrange font-bold pr-2">•</span>
+                <span className="text-customOrange font-black pr-3">•</span>
                 павильоны и навесы;
               </li>
               <li>
-                <span className="text-customOrange font-bold pr-2">•</span>
+                <span className="text-customOrange font-black pr-3">•</span>
                 ограждающие и декоративные элементы.
               </li>
             </ul>
@@ -97,7 +97,7 @@ export const ProductionsPage = () => {
           </div>
         </section>
         <section
-          className="bg-cover bg-ещз h-25 flex jusify-start xl:justify-center"
+          className="bg-cover bg-left h-25 flex jusify-start xl:justify-center"
           style={{ backgroundImage: `url(${image1})` }}
         >
           <h2
@@ -111,9 +111,6 @@ export const ProductionsPage = () => {
         </section>
         <section className="flex flex-col items-center border-b border-gray-200 shadow-lg">
           <div className="px-4 pb-[180px] w-full xl:w-4/5 max-w-screen-custom2xl flex flex-col items-start border-b">
-            {/* <h2 className="pt-[100px] font-bold text-2xl">
-              МЕХАНИЧЕСКАЯ ОБРАБОТКА
-            </h2> */}
             <table className="text-lg w-full max-w-screen-custom2xl">
               <thead>
                 <tr className="h-[100px] border-b-[1px] border-solid border-gray-300 py-2 text-left">
@@ -129,7 +126,7 @@ export const ProductionsPage = () => {
                       key={item.id}
                       className="h-[100px] border-b-[1px] border-solid border-gray-300 py-2 text-left"
                     >
-                      <td className="h-[20px] text-lg w-[200px] md:w-[380px] xl:w-[500px]">
+                      <td className="h-[20px] text-lg w-1/2 md:w-[380px] xl:w-[500px]">
                         {item.name}
                       </td>
                       <td className="text-lg flex-grow">{item.description}</td>
