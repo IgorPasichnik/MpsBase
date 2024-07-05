@@ -45,7 +45,7 @@ export const AboutCompanyPage = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
-            className="tracking-tighter p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[38px] sm:text-5xl md:text-6xl lg:text-7xl"
+            className="tracking-tighter p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[38px] sm:text-5xl md:text-6xl"
             style={{
               textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
             }}
