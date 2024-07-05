@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
-import image1 from "../../images/background/3.png";
+import image1 from "../../images/background/34.png";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
 import { Helmet } from "react-helmet";
 
@@ -50,7 +50,7 @@ export const ProductionsPage = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
-            className="p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[32px] sm:text-5xl md:text-6xl"
+            className="p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[32px] sm:text-5xl"
             style={{
               textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
             }}
