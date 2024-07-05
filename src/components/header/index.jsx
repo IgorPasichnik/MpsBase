@@ -34,10 +34,10 @@ export const Header = () => {
   return (
     <header className="fixed left-0 right-0 top-0 bg-white shadow-2xl z-50">
       <nav className="h-[94px] border-b-2 border-gray-300 flex flex-col items-center justify-center">
-        <div className="p-4 w-full xl:w-4/5 max-w-screen-custom2xl flex items-end justify-between">
+        <div className="p-4 w-full xl:w-4/5 max-w-screen-custom2xl flex items-center justify-between">
           <img src={logo} alt="logo MPS" className="w-32 md:w-40" />
           <div className="tracking-tight grid lg:grid-flow-col justify-center gap-2 lg:gap-6 text-base">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-0">
               <p className="hidden lg:block">Отдел продаж металлопроката:</p>
               <Link to="#contacts">
                 <CustomButton>
@@ -46,7 +46,7 @@ export const Header = () => {
                 </CustomButton>
               </Link>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <p className="hidden lg:block">
                 Отдел продаж металлоконструкций и мехобработки:
               </p>
@@ -60,8 +60,12 @@ export const Header = () => {
             <div className="hidden lg:block">
               <Link to="#contacts">
                 <CustomButton>
-                  <img src={marker} alt="marker-icon" className="w-6 m-0.5" />
-                  <span>Мариуполь</span>
+                  <img
+                    src={marker}
+                    alt="marker-icon"
+                    className="w-[18px] m-0.5"
+                  />
+                  <span className="ml-[2px] mb-[7px]">Мариуполь</span>
                 </CustomButton>
               </Link>
             </div>
@@ -78,20 +82,6 @@ export const Header = () => {
             >
               <img src={menuForPhone} alt="menu for phone" className="w-8" />
             </button>
-            {/* <div className="grid grid-flow-col justify-center gap-1 text-base">
-              <Link to="#contacts" className="py-2 my-2 mr-2 ">
-                <CustomButton>
-                  <img src={phone} alt="phone" className="w-6 m-0.5" />
-                  <span>+7 (949) 605-26-47</span>
-                </CustomButton>
-              </Link>
-              <Link to="#contacts" className="py-2 my-2 mr-4 ">
-                <CustomButton>
-                  <img src={marker} alt="marker" className="w-6 m-0.5" />
-                  <span>Мариуполь</span>
-                </CustomButton>
-              </Link>
-            </div> */}
           </div>
 
           {isOpenMenu && <Menu />}
