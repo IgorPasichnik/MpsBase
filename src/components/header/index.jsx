@@ -36,8 +36,8 @@ export const Header = () => {
       <nav className="h-[94px] border-b-2 border-gray-300 flex flex-col items-center justify-center">
         <div className="p-4 w-full xl:w-4/5 max-w-screen-custom2xl flex items-center justify-between">
           <img src={logo} alt="logo MPS" className="w-32 md:w-40" />
-          <div className="tracking-tight grid lg:grid-flow-col justify-center gap-2 lg:gap-6 text-base">
-            <div className="flex flex-col gap-0">
+          <div className="tracking-tight grid md:grid-flow-col justify-center gap-2 md:gap-6 text-base">
+            <div className="flex flex-col gap-1 justify-center">
               <p className="hidden lg:block">Отдел продаж металлопроката:</p>
               <Link to="#contacts">
                 <CustomButton>
@@ -46,7 +46,7 @@ export const Header = () => {
                 </CustomButton>
               </Link>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 justify-center">
               <p className="hidden lg:block">
                 Отдел продаж металлоконструкций и мехобработки:
               </p>
@@ -57,15 +57,15 @@ export const Header = () => {
                 </CustomButton>
               </Link>
             </div>
-            <div className="hidden lg:block">
+            <div className="hidden  md:block lg:ml-[20px] lg:relative">
               <Link to="#contacts">
                 <CustomButton>
                   <img
                     src={marker}
                     alt="marker-icon"
-                    className="w-[18px] m-0.5"
+                    className="lg:absolute lg:top-[-3px] lg:left-[-22px] w-[16px] m-0.5"
                   />
-                  <span className="ml-[2px] mb-[7px]">Мариуполь</span>
+                  <span className="ml-[2px] lg:mb-[7px]">Мариуполь</span>
                 </CustomButton>
               </Link>
             </div>
