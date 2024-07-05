@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export const TermsOfUse = () => {
   const location = useLocation();
@@ -23,9 +23,9 @@ export const TermsOfUse = () => {
 
   return (
     <div>
-      {/* <Helmet>
+      <Helmet>
         <meta name="robots" content="noindex" />
-      </Helmet> */}
+      </Helmet>
       <div className="py-10 px-4 lg:px-20 text-sm lg:text-base text-justify">
         <h1 className="text-base lg:text-xl font-bold">
           СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ КЛИЕНТОВ

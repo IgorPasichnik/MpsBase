@@ -6,7 +6,7 @@ import {
   useGetTrubProductsQuery,
 } from "../../app/services/products";
 import { Layout } from "../../components/layout";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export const ProductsPage = () => {
   const { data: dataSort, isLoading: isLoadingSort } =
@@ -35,7 +35,7 @@ export const ProductsPage = () => {
 
   return (
     <Layout>
-      {/* <Helmet>
+      <Helmet>
         <title>Металлопрокат в Мариуполе - Купить</title>
         <meta
           name="description"
@@ -47,7 +47,7 @@ export const ProductsPage = () => {
         />
         <link rel="canonical" href="https://mps-base.vercel.app/products" />
         <meta name="robots" content="index" />
-      </Helmet> */}
+      </Helmet>
       <main className="w-full border-gray-200 shadow-lg flex justify-center">
         <div className="px-4 pb-[180px] w-full xl:w-4/5 max-w-screen-custom2xl flex flex-col items-start border-b">
           <h2 id="sheet" className="pt-[220px] font-bold text-2xl">

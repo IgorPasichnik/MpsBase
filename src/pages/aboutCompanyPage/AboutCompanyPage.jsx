@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Layout } from "../../components/layout";
 import forward from "../../images/forward-64.png";
 import image from "../../images/background/1.jpg";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export const AboutCompanyPage = () => {
   const location = useLocation();
@@ -26,7 +26,7 @@ export const AboutCompanyPage = () => {
 
   return (
     <Layout>
-      {/* <Helmet>
+      <Helmet>
         <title>
           МПС - Металлопрокат и металлоконструкции в Мариуполе - Купить
         </title>
@@ -37,7 +37,7 @@ export const AboutCompanyPage = () => {
         <meta property="og:url" content="https://mps-base.vercel.app/" />
         <link rel="canonical" href="https://mps-base.vercel.app/" />
         <meta name="robots" content="index" />
-      </Helmet> */}
+      </Helmet>
       <main className="w-full max-w-full">
         <div id="about-company" className="h-[162px]"></div>
         <section
@@ -79,7 +79,7 @@ export const AboutCompanyPage = () => {
               </div>
             </div>
             <div className="absolute mt-[13px] md:w-4/5 xl:w-7/10 max-w-7xl h-[520px] lg:h-[400px] bg-customGray opacity-80"></div>
-            <div className="md:h-[520px] lg:h-[400px] md:relative md:w-3/5 lg:w-4/7 mb-[12px] md:border-[13px] md:ml-auto border-customOrange border-opacity-80 rounded-sm bg-white z-10">
+            <figure className="md:h-[520px] lg:h-[400px] md:relative md:w-3/5 lg:w-4/7 mb-[12px] md:border-[13px] md:ml-auto border-customOrange border-opacity-80 rounded-sm bg-white z-10">
               <div className="md:pl-32 lg:pl-10 2xl:pl-24 pt-12 lg:pt-12 right-0 flex flex-wrap justify-center lg:grid grid-cols-2 justify-items-center gap-16 md:gap-0">
                 <div className="w-[350px] lg:w-[200px] 2xl:w-[300px] h-[80px] lg:h-[150px] flex items-start">
                   <img
@@ -97,7 +97,7 @@ export const AboutCompanyPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-[350px] h-[110px] lg:h-[150px] flex items-start">
+                <div className="w-[350px] lg:w-[280px] 2xl:w-[300px] h-[110px] lg:h-[150px] flex items-start">
                   <img
                     src={forward}
                     alt="forward"
@@ -113,7 +113,7 @@ export const AboutCompanyPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-[350px] 2xl:w-[300px] lg:w-[200px] h-[110px] lg:h-[150px] flex items-start">
+                <div className="w-[350px] lg:w-[200px] 2xl:w-[300px] h-[110px] lg:h-[150px] flex items-start">
                   <img
                     src={forward}
                     alt="forward"
@@ -130,7 +130,7 @@ export const AboutCompanyPage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-[350px] h-[110px] lg:h-[150px] flex items-start">
+                <div className="w-[350px] lg:w-[280px] 2xl:w-[300px] h-[110px] lg:h-[150px] flex items-start">
                   <img
                     src={forward}
                     alt="forward"
@@ -148,7 +148,7 @@ export const AboutCompanyPage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </figure>
           </div>
         </section>
       </main>

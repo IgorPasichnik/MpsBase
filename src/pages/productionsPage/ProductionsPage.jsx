@@ -4,7 +4,7 @@ import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
 import image1 from "../../images/background/3.jpg";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export const ProductionsPage = () => {
   const { data, isLoading } = useGetRestorationProductionsQuery();
@@ -28,7 +28,7 @@ export const ProductionsPage = () => {
 
   return (
     <Layout>
-      {/* <Helmet>
+      <Helmet>
         <title>
           Металлоконструкции и механическая обработка в Мариуполе - Купить
         </title>
@@ -42,7 +42,7 @@ export const ProductionsPage = () => {
         />
         <link rel="canonical" href="https://mps-base.vercel.app/productions" />
         <meta name="robots" content="index" />
-      </Helmet> */}
+      </Helmet>
       <main className="w-full max-w-full">
         <div id="structures" className="h-[162px]"></div>
         <section
@@ -50,7 +50,7 @@ export const ProductionsPage = () => {
           style={{ backgroundImage: `url(${image})` }}
         >
           <h1
-            className="p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[32px] sm:text-5xl"
+            className="tracking-tighter p-2 md:p-4 xl:w-4/5 max-w-screen-custom2xl flex items-center text-white text-[32px] sm:text-5xl"
             style={{
               textShadow: "4px 4px 30px #000000, -4px -4px 30px #000000",
             }}
