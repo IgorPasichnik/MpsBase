@@ -92,7 +92,7 @@ export const AboutCompanyPage = () => {
                       12 лет
                     </div>
 
-                    <p className=" text-gray-500 text-2xl md:text-xl 2xl:text-2xl font-normal">
+                    <p className="text-gray-500 text-2xl md:text-xl 2xl:text-2xl font-normal">
                       на рынке
                     </p>
                   </div>
@@ -124,7 +124,7 @@ export const AboutCompanyPage = () => {
                       1 000 т
                     </div>
 
-                    <p className=" text-gray-500 text-2xl md:text-xl 2xl:text-2xl font-normal">
+                    <p className="text-gray-500 text-2xl md:text-xl 2xl:text-2xl font-normal">
                       продукции <br />
                       на складе
                     </p>
