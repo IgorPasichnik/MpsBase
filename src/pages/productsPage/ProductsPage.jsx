@@ -68,7 +68,7 @@ export const ProductsPage = () => {
                     key={item.id}
                     className="h-[100px] border-b-[1px] border-solid border-gray-300 py-2 text-left"
                   >
-                    <td className="h-[20px] text-lg w-[200px] md:w-[380px] xl:w-[500px]">
+                    <td className="h-[20px] text-lg w-1/2 md:w-[380px] xl:w-[500px]">
                       {item.name}
                     </td>
                     <td className="text-lg flex-grow">{item.description}</td>
@@ -122,7 +122,7 @@ export const ProductsPage = () => {
                     key={item.id}
                     className="h-[100px] border-b-[1px] border-solid border-gray-300 py-2 text-left"
                   >
-                    <td className="h-[20px] text-lg w-[200px] md:w-[380px] xl:w-[500px]">
+                    <td className="h-[20px] text-lg w-1/2 md:w-[380px] xl:w-[500px]">
                       {item.name}
                     </td>
                     <td className="text-lg flex-grow">{item.description}</td>

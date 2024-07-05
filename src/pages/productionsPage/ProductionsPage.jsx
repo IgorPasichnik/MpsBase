@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
-import image1 from "../../images/background/3.png";
+import image1 from "../../images/background/3.jpg";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
 // import { Helmet } from "react-helmet";
 
@@ -97,7 +97,7 @@ export const ProductionsPage = () => {
           </div>
         </section>
         <section
-          className="bg-cover bg-left h-25 flex jusify-start xl:justify-center"
+          className="bg-cover bg-right h-25 flex jusify-start xl:justify-center"
           style={{ backgroundImage: `url(${image1})` }}
         >
           <h2

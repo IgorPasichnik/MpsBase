@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Layout } from "../../components/layout";
 import forward from "../../images/forward-64.png";
-import image from "../../images/background/4.jpg";
+import image from "../../images/background/1.jpg";
 // import { Helmet } from "react-helmet";
 
 export const AboutCompanyPage = () => {
