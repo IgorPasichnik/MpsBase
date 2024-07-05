@@ -4,26 +4,32 @@ import { Link } from "react-router-dom";
 export const Menu = () => {
   return (
     <ul className="ml-4 w-[368px] border-t-2 border-gray-500 rounded-sm flex flex-col absolute bg-customGray drop-d text-white">
-      <div className="p-4 border-b-2 border-gray-500 flex justify-start">
-        <Link to="/#about-сompany">
-          <CustomButton>О компании</CustomButton>
-        </Link>
-      </div>
-      <div className="p-4 border-b-2 border-gray-500 flex justify-start">
-        <Link to="/products">
-          <CustomButton>Продукция</CustomButton>
-        </Link>
-      </div>
-      <div className="p-4 border-b-2 border-gray-500 flex justify-start">
-        <Link to="/productions">
-          <CustomButton>Производство</CustomButton>
-        </Link>
-      </div>
-      <div className="p-4 flex justify-start">
-        <Link to="/#contacts">
-          <CustomButton>Контакты</CustomButton>
-        </Link>
-      </div>
+      <Link to="/#about-сompany">
+        <CustomButton>
+          <div className="p-4  flex justify-start">О компании</div>
+        </CustomButton>
+      </Link>
+      <div className="border-b-2 border-gray-500 w-full" />
+
+      <Link to="/products">
+        <CustomButton>
+          <div className="p-4 flex justify-start">Продукция</div>
+        </CustomButton>
+      </Link>
+      <div className="border-b-2 border-gray-500 w-full" />
+
+      <Link to="/productions">
+        <CustomButton>
+          <div className="p-4 flex justify-start">Производство</div>
+        </CustomButton>
+      </Link>
+      <div className="border-b-2 border-gray-500 w-full" />
+
+      <Link to="/#contacts">
+        <CustomButton>
+          <div className="p-4 flex justify-start">Контакты</div>
+        </CustomButton>
+      </Link>
     </ul>
   );
 };
