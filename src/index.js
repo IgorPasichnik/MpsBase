@@ -6,7 +6,6 @@ import { Paths } from "./paths";
 import { ProductsPage } from "./pages/productsPage/ProductsPage";
 import { ProductionsPage } from "./pages/productionsPage/ProductionsPage";
 import { AboutCompanyPage } from "./pages/aboutCompanyPage/AboutCompanyPage";
-import { TermsOfUse } from "./pages/termsOfUse/TermsOfUse";
 import { store } from "./app/store";
 import "./index.css";
 
@@ -22,10 +21,6 @@ const router = createBrowserRouter([
   {
     path: Paths.productions,
     element: <ProductionsPage />,
-  },
-  {
-    path: Paths.termsOfUse,
-    element: <TermsOfUse />,
   },
 ]);
 
