@@ -34,7 +34,7 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col justify-center gap-1">
             <p className="font-bold text-white">Адрес:</p>
-            <p>ДНР, г. Мариуполь, улица Пржевальского, 7.</p>
+            <p>ДНР, г. Мариуполь, улица Таганрогская, 197</p>
           </div>
           <a
             href="https://t.me/mpsmetalcenter"
