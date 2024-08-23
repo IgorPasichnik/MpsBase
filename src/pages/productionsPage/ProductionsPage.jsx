@@ -34,7 +34,7 @@ export const ProductionsPage = () => {
         </title>
         <meta
           name="description"
-          content="балки перекрытия и фермы, колонны и опоры, каркасы и стойки, павильоны и навесы, ограждающие и декоративные элементы."
+          content="Балки перекрытия и фермы, колонны и опоры, каркасы и стойки, павильоны и навесы, ограждающие и декоративные элементы."
         />
         <meta property="og:url" content="https://ooomps.com/productions" />
         <link rel="canonical" href="https://ooomps.com/productions" />

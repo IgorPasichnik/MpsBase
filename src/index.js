@@ -8,6 +8,7 @@ import { ProductionsPage } from "./pages/productionsPage/ProductionsPage";
 import { AboutCompanyPage } from "./pages/aboutCompanyPage/AboutCompanyPage";
 import { store } from "./app/store";
 import "./index.css";
+import { ErrorPage } from "./pages/error404/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: Paths.productions,
     element: <ProductionsPage />,
+  },
+  {
+    path: Paths.error,
+    element: <ErrorPage />,
   },
 ]);
 
