@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import { Layout } from "../../components/layout";
 import forward from "../../images/forward-64.png";
 import image from "../../images/background/1.jpg";
-import { Helmet } from "react-helmet";
 
 export const AboutCompanyPage = () => {
   const location = useLocation();
@@ -26,18 +25,6 @@ export const AboutCompanyPage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>
-          МПС - Металлопрокат и металлоконструкции в Мариуполе - Купить
-        </title>
-        <meta
-          name="description"
-          content="МПС - поставщик металлопроката и производитель промышленных и коммерческих металлоконструкций."
-        />
-        <meta property="og:url" content="https://ooomps.com" />
-        <link rel="canonical" href="https://ooomps.com" />
-        <meta name="robots" content="index" />
-      </Helmet>
       <main className="w-full max-w-full">
         <div id="about-company" className="h-[162px]"></div>
         <section

@@ -6,7 +6,6 @@ import {
   useGetTrubProductsQuery,
 } from "../../app/services/products";
 import { Layout } from "../../components/layout";
-import { Helmet } from "react-helmet";
 
 export const ProductsPage = () => {
   const { data: dataSort, isLoading: isLoadingSort } =
@@ -35,16 +34,6 @@ export const ProductsPage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Металлопрокат в Мариуполе - Купить</title>
-        <meta
-          name="description"
-          content="Листовой прокат, сортовой прокат, трубная продукция"
-        />
-        <meta property="og:url" content="https://ooomps.com/products" />
-        <link rel="canonical" href="https://ooomps.com/products" />
-        <meta name="robots" content="index" />
-      </Helmet>
       <main className="w-full border-gray-200 shadow-lg flex justify-center">
         <div className="px-4 pb-[180px] w-full xl:w-4/5 max-w-screen-custom2xl flex flex-col items-start border-b">
           <h2 id="sheet" className="pt-[220px] font-bold text-2xl">

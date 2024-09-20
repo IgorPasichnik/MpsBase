@@ -4,7 +4,6 @@ import { Layout } from "../../components/layout";
 import image from "../../images/background/2.jpg";
 import image1 from "../../images/background/3.jpg";
 import { useGetRestorationProductionsQuery } from "../../app/services/productions";
-import { Helmet } from "react-helmet";
 
 export const ProductionsPage = () => {
   const { data, isLoading } = useGetRestorationProductionsQuery();
@@ -28,18 +27,6 @@ export const ProductionsPage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>
-          Металлоконструкции и механическая обработка в Мариуполе - Купить
-        </title>
-        <meta
-          name="description"
-          content="Балки перекрытия и фермы, колонны и опоры, каркасы и стойки, павильоны и навесы, ограждающие и декоративные элементы."
-        />
-        <meta property="og:url" content="https://ooomps.com/productions" />
-        <link rel="canonical" href="https://ooomps.com/productions" />
-        <meta name="robots" content="index" />
-      </Helmet>
       <main className="w-full max-w-full">
         <div id="structures" className="h-[162px]"></div>
         <section
